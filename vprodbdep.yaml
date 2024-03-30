@@ -17,8 +17,6 @@ spec:
       containers:
       - name: vprodb
         image: phihung1607/vprofiledb:latest
-#       args:
-#         - "--ignore-db-dir=lost+found"
         volumeMounts:
           - mountPath: /var/lib/mysql
             name: vpro-db-data
